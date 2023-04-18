@@ -1,0 +1,58 @@
+/*  
+  Author: Emmanuel Wanzusi, Student#: 000394903
+  Date file was created: July 2nd, 2022
+  Description: File styles.css is a css page that contains
+  the style elements seen on webpage index.html. 
+ */
+
+ h1 {
+
+   text-align: center;  
+
+ }
+
+ #userid {
+
+   width: 300px;
+
+ }
+
+ Label[for=heads] {
+   
+   margin-top: 1%;
+   margin-right: 4%;
+
+ }
+
+ [type=submit] {
+
+   margin-top: 1%;
+   padding: 10px;
+
+ }
+
+ [id=help], #instructions {
+   
+   margin-left: 10px;
+   display: none;
+
+
+ }
+
+ form {
+
+   text-align: center;
+
+ }
+
+ #pic {
+   
+   display: block;
+   margin-left: auto;
+   max-width: 100%;
+   margin-right: auto;
+
+ }
+
+ 
+    

@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- 
+   Author: Emmanuel Wanzusi
+   Date file was created: July 2nd, 2022
+   Description: File index.html is an html file that contains
+   my web application game: Heads N' Tails that uses Java
+   event handling and DOM manipulation. 
+ -->
+
+<html lang="en">
+
+<head>
+    <title>Heads N' Tails</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+    crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="a4.js"></script>
+</head>
+
+<body>
+    <input id="help" type="submit" value="Help">
+    <h1>Heads N' Tails</h1>
+    <p id="instructions">
+        Welcome to Heads N' Tails!<br>
+    <br>    
+        How to Play<br>
+
+        1. Enter a Username<br> 
+           - Has to start with a capital letter.<br>
+           - Must be at least 4 letters, maximum 8 letters.<br>
+           - Cannot have numbers, spaces, or special characters.<br>
+           - Each letter in the username must be alphabetically bigger<br>
+             than the previous letter.<br>
+    <br>
+        2. Guess and select which side you think shall be shown.<br>
+           Either Heads or Tails.<br>
+    <br>    
+        3. Select on 'Start Game!' to start coin flip.<br>
+           - Coin shall flip a random number of times between a minimum of 10 OR
+             a maximum of 50 times!<br>
+           - Number of flips will be shown and the current flip.<br>  
+    <br>    
+        4. Once the Heads N' Tails game has completed, depending on your guess (Heads or Tails),<br>
+           it will either display at least 1 Win or 1 Loss, if playing for the first time.<br>
+           And if your guess is correct, of which side is shown by the coin after the flip<br>
+           you will get a win. And if the side shown on the coin after the coin flip is different<br>
+           from your guess you will get a loss.<br>
+    <br>
+        5. To reset the game select on 'Reset Game' to play again.<br> 
+           You can optionally change your guess from Tails to Heads<br>
+           OR from Heads to Tails before pressing 'Reset Game'.<br>
+    <br>       
+        6. Have fun! This game can be very addicting!<br>   
+    </p>
+    <form id="index_form">
+        <label for="userid">Username: </label><br>
+        <input id="userid" type="text" id="userid" placeholder="Enter your name" name="userid"><br>
+        <p id="errorMessage"> </p>
+
+        <input type="radio" id="heads" name="choice" value="heads">
+        <label for="heads">Heads</label>
+        <input type="radio" id="tails" name="choice" value="tails">
+        <label for="tails">Tails</label><br>
+        <p id="score"> </p>
+        <p id="flips"> </p>
+        <p id="gameMessage"> </p>
+
+        <input id="submit" type="submit" value="Start Game!">
+        
+    </form>
+    <img id='pic' src='' alt=''>
+  
+</body>
+
+</html>
